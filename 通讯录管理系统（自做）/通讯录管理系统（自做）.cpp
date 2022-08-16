@@ -1,7 +1,8 @@
 #include<iostream>
 #include<string>
 using namespace std;
-const int MAX = 1000;
+//const int MAX = 1000;
+#define MAX 1000;
 
 
 void showMenu()
@@ -42,7 +43,7 @@ void AddCont(AddressBooks *abs)//地址传递，可以修改主函数中的数据
 	if (abs->Size == MAX)
 	{
 		cout << "通讯录已满，无法添加！" << endl;
-		return;
+		return;//这里 不错啊
 	}
 	else
 	{
